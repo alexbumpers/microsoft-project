@@ -31,10 +31,10 @@
   }
 
   &__heading-primary {
-    
     font-weight: 400;
     font-size: 21px;
     text-shadow: 10px 5px 10px black;
+    
     @include respond(big-desktop) {
       font-size: 250%;
     }
