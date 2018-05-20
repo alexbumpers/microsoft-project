@@ -1,0 +1,165 @@
+.audio {
+  background-size: cover;
+  background-image: linear-gradient(to top left, 
+    rgba($color-purple-dark, .2) 100%,
+    rgba($color-purple-light, .2) 100%,
+    transparent 50%),
+    url(../img/kalisa-veer-349467-unsplash.jpg);
+
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100vh;
+
+  @include respond(big-desktop) {
+      overflow: hidden;
+  }
+}
+
+.text-container {
+  color:  $color-white;
+  font-family: Lato;
+  padding: 100px 25px;
+
+  @include respond(big-desktop) {
+    padding: 100px 70px;
+  }
+
+  &__heading-primary {
+    
+    font-weight: 400;
+    font-size: 21px;
+    text-shadow: 10px 5px 10px black;
+    @include respond(big-desktop) {
+      font-size: 250%;
+    }
+  }
+
+  &__paragraph {
+    margin-right: 680px;
+    font-weight: 300;
+    font-size: 16px;
+
+    @include respond(big-desktop) {
+      font-size: 250%;
+    }
+  }
+
+  &__audio-controls {
+    margin-top: 40px;
+    width: 30%;
+    height: 200%;
+    
+  }
+
+  &__audio-play {
+    z-index: 2000;
+    color: $color-white;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0 5px 2px rgba($color-black, .5);
+    padding: 3px 40px 3px 40px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 20px;
+    background-image: linear-gradient(to top left, 
+      rgba($color-primary, .9) 100%,
+      rgba($color-primary-dark, .9) 100%);
+
+    @include respond(big-desktop) {
+      padding: 10px 140px 10px 140px;
+      font-size: 200%;
+    }
+        
+    &:active,
+    &:focus,
+    &:after {
+      outline: none;
+    }
+  }
+}
+
+.main {
+  &__video {
+    position:fixed;
+    padding:0;
+    margin:0;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -0;
+  }
+
+  &__fg-video {
+    position:fixed;
+    padding:0;
+    margin:0;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -0;
+  }
+
+  &__play {
+    z-index: 2000;
+    color: $color-black;
+    background-color: $color-white;
+    border-radius: 50px;
+    position: absolute;
+    left: 44.60%;
+    bottom: 15%;
+    box-shadow: 0 5px 2px rgba($color-black, .5);
+    padding: 0px 80px 0px 80px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 20px;
+
+    @include respond(big-desktop) {
+      bottom: 10.5%;
+      left: 45%;
+    }
+
+    &:active,
+    &:focus,
+    &:after {
+      outline: none;
+    }
+  }
+
+  &__skip-button {
+    z-index: 2000;
+    color: $color-black;
+    background-color: $color-white;
+    border-radius: 50px;
+    position: absolute;
+    left: 42.5%;
+    bottom: 2.5%;
+    box-shadow: 0 5px 2px rgba($color-black, .5);
+    padding: 5px 80px 5px 80px;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 20px;
+
+    @include respond(big-desktop) {
+      bottom: 2.5%;
+      left: 43.60%;
+    }
+    
+    &:active,
+    &:focus,
+    &:after {
+      outline: none;
+    }
+  }
+}
